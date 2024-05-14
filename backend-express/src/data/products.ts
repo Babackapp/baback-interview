@@ -28,7 +28,7 @@ export const productsStub: Product[] = [
         id: '3',
         name: 'Voiture',
         price: 10.00,
-        quantity: 3,
+        quantity: 1,
         description: 'Description 3',
         imageUrl: 'https://prd.place/400?id=36',
     },
