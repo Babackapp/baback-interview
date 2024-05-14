@@ -9,7 +9,13 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import {CircleUser, Menu, Package2, Search, ShoppingCartIcon} from "lucide-react";
+import {
+  CircleUser,
+  Menu,
+  Package2,
+  Search,
+  ShoppingCartIcon,
+} from "lucide-react";
 import Basket from "./components/basket/Basket.tsx";
 
 export default function App() {

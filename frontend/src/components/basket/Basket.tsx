@@ -1,18 +1,18 @@
-import {productsStub} from "../../products.ts";
+import { productsStub } from "../../products.ts";
 import BasketList from "@/components/basket/BasketList.tsx";
 import BasketTotal from "@/components/basket/BasketTotal.tsx";
 import AddProductButton from "@/components/basket/AddProductButton.tsx";
-import {discountsStub} from "@/discounts.ts";
+import { discountsStub } from "@/discounts.ts";
 
 export default function Basket() {
-	const basketProducts = productsStub;
-	const discounts = discountsStub;
+  const basketProducts = productsStub;
+  const discounts = discountsStub;
 
-	return (
-		<>
-			<AddProductButton />
-			<BasketList products={basketProducts} />
-			<BasketTotal products={basketProducts} discounts={discounts}/>
-		</>
-	);
+  return (
+    <>
+      <AddProductButton />
+      <BasketList products={basketProducts} />
+      <BasketTotal products={basketProducts} discounts={discounts} />
+    </>
+  );
 }
