@@ -5,8 +5,8 @@
 		"path": "."
 	},
     {
-      "name": "baback-express",
-      "path": "./baback-express"
+      "name": "backend-express",
+      "path": "./backend-express"
     },
     {
       "name": "frontend",
