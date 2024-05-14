@@ -2,6 +2,9 @@ import {Card, CardContent, CardHeader, CardTitle,} from "@/components/ui/card.ts
 import {Product} from "../../products.ts";
 import {Discount} from "@/discounts.ts";
 import {Badge} from "@/components/ui/badge.tsx";
+import { Button } from "../ui/button.tsx";
+import { PlusCircle } from "lucide-react";
+import { Input } from "../ui/input.tsx";
 
 export default function BasketTotal({
 	products,
@@ -17,10 +20,19 @@ export default function BasketTotal({
 					<span>Sous-total</span>
 					<span>100 €</span>
 				</div>
+                <div className="flex justify-between gap-1">
+                    <Input className="h-6" />
+                    <Button size="sm" className="h-6 gap-1">
+                        <PlusCircle className="h-3.5 w-3.5" />
+                        <span className="sr-only sm:not-sr-only sm:whitespace-nowrap">
+							Ajouter un coupon
+						</span>
+                    </Button>
+                </div>
 				<div className="flex justify-between">
-					<span>Coupons appliqués</span>
-					<div className="flex gap-1 flex-wrap justify-end">
-						{discounts.map((discount) => (
+                    <span>Coupons appliqués</span>
+                    <div className="flex gap-1 flex-wrap justify-end">
+                        { discounts.map((discount) => (
 							<div key={discount.title}>
 								<Badge variant="outline">{discount.title}</Badge>
 							</div>

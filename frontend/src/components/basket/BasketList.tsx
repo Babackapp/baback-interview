@@ -17,9 +17,9 @@ export default function BasketList({ products }: { products: Product[] }) {
                                 <TableHead className="hidden w-[150px] sm:table-cell text-center">
                                     <span className="sr-only">Image</span>
                                 </TableHead>
-                                <TableHead>Name</TableHead>
-                                <TableHead className="hidden md:table-cell text-center">Price</TableHead>
-                                <TableHead className="hidden md:table-cell text-center">Quantity</TableHead>
+                                <TableHead>Nom du produit</TableHead>
+                                <TableHead className="hidden md:table-cell text-center">Prix unitaire</TableHead>
+                                <TableHead className="hidden md:table-cell text-center">Quantité</TableHead>
                                 <TableHead>
                                     <span className="sr-only">Actions</span>
                                 </TableHead>
