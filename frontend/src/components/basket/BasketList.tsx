@@ -13,7 +13,7 @@ import {
   TableRow,
 } from "@/components/ui/table.tsx";
 import { TrashIcon } from "lucide-react";
-import { Product } from "../../products.ts";
+import { Product } from "../../data/products.ts";
 
 export default function BasketList({ products }: { products: Product[] }) {
   return (

@@ -13,7 +13,7 @@ export const productsStub: Product[] = [
         name: 'Microphone',
         price: 30.00,
         quantity: 2,
-        description: 'Description 1',
+        description: 'Un super microphone pour enregistrer des podcasts ou des vidéos.',
         imageUrl: 'https://prd.place/400?id=12',
     },
     {
@@ -21,15 +21,15 @@ export const productsStub: Product[] = [
         name: 'Cadre',
         price: 20.00,
         quantity: 1,
-        description: 'Description 2',
+        description: 'Un cadre pour mettre une photo de famille.',
         imageUrl: 'https://prd.place/400?id=24',
     },
     {
         id: '3',
         name: 'Voiture',
         price: 10.00,
-        quantity: 3,
-        description: 'Description 3',
+        quantity: 1,
+        description: 'Une voiture télécommandée pour jouer avec les enfants.',
         imageUrl: 'https://prd.place/400?id=36',
     },
 ];
