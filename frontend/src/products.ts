@@ -10,7 +10,7 @@ export type Product = {
 export const productsStub: Product[] = [
     {
         id: '1',
-        name: 'Product 1',
+        name: 'Microphone',
         price: 30.00,
         quantity: 2,
         description: 'Description 1',
@@ -18,7 +18,7 @@ export const productsStub: Product[] = [
     },
     {
         id: '2',
-        name: 'Product 2',
+        name: 'Cadre',
         price: 20.00,
         quantity: 1,
         description: 'Description 2',
@@ -26,7 +26,7 @@ export const productsStub: Product[] = [
     },
     {
         id: '3',
-        name: 'Product 3',
+        name: 'Voiture',
         price: 10.00,
         quantity: 3,
         description: 'Description 3',

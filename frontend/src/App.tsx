@@ -9,8 +9,8 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { CircleUser, Menu, Package2, Search } from "lucide-react";
-import Basket from "./Basket";
+import {CircleUser, Menu, Package2, Search, ShoppingCartIcon} from "lucide-react";
+import Basket from "./components/basket/Basket.tsx";
 
 export default function App() {
   return (
@@ -116,10 +116,11 @@ export default function App() {
               />
             </div>
           </form>
+          <ShoppingCartIcon className="size-5" />
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="secondary" size="icon" className="rounded-full">
-                <CircleUser className="h-5 w-5" />
+                <CircleUser className="size-5" />
                 <span className="sr-only">Toggle user menu</span>
               </Button>
             </DropdownMenuTrigger>
