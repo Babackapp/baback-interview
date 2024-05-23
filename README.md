@@ -14,7 +14,7 @@ npm run dev
 ### Objectif
 
 On cherche à calculer le prix d'un panier lors d'une commande en ligne. La commande contient un panier avec des articles, et un ou plusieurs codes promo.  
-On veut donc créer la fonction permettant de déterminer le prix final du panier avec un ou plusieurs codes promo.
+**On veut donc créer la fonction permettant de déterminer le prix final du panier sur lequel est appliqué un ou plusieurs codes promo.**
 
 Les codes promo peuvent être de plusieurs types :
 - Une réduction en pourcentage (-10% sur la commande)
