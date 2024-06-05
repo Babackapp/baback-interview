@@ -1,11 +1,12 @@
 # Baback Interview Backend
 
-Les routes sont dans `server.ts`.   
+La fonction principale est dans `index.ts`.
+(optionel) Les routes sont dans `routes.ts`.   
 Le dossier `data` contient des données de demo et des exemples de types
 
 ### What's in
 
-- Express
+- Express (optionel)
 - TypeScript
 - Jest
 
@@ -14,5 +15,6 @@ Le dossier `data` contient des données de demo et des exemples de types
 ```
 npm i
 npm run dev
-# npm run test
+# ou 
+npm run test
 ```
