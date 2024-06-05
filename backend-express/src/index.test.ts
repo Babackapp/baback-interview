@@ -45,9 +45,9 @@ describe('calculateFinalPrice', () => {
             productsStub[1],
             productsStub[2],
         ], [
-            "1_ACHETE_1_OFFERT",
+            "1_ACHETE_1_OFFERT_MICROPHONE",
         ]);
-        expect(result).toBe(50);
+        expect(result).toBe(60);
     });
 
     it.skip('should return the total with multiple discounts', () => {
@@ -58,9 +58,9 @@ describe('calculateFinalPrice', () => {
         ], [
             "20_EURO_OFF",
             "10_PERCENT_OFF",
-            "1_ACHETE_1_OFFERT",
+            "1_ACHETE_1_OFFERT_MICROPHONE",
         ]);
-        expect(result).toBe(41);
+        expect(result).toBe(33);
     });
 
     it.skip('should apply the discounts with an order (fixed, percent, 1for1)', () => {
@@ -71,9 +71,9 @@ describe('calculateFinalPrice', () => {
         ], [
             "10_PERCENT_OFF",
             "20_EURO_OFF",
-            "1_ACHETE_1_OFFERT",
+            "1_ACHETE_1_OFFERT_MICROPHONE",
         ]);
-        expect(result).toBe(41);
+        expect(result).toBe(33);
     });
 
     it.skip('should fail when a minimal amount rule is not respected', () => {
@@ -86,13 +86,12 @@ describe('calculateFinalPrice', () => {
 
     it.skip('should respect discount rules on selected products only', () => {
         const result = calculateFinalPrice([
-            productsStub[0],
             productsStub[1],
             productsStub[2],
         ], [
             "1_ACHETE_1_OFFERT_MICROPHONE",
         ]);
-        expect(result).toBe(50);
+        expect(result).toBe(30);
     });
 
     it.skip('should fail discount rules when quantity rule is not respected', () => {
@@ -108,7 +107,7 @@ describe('calculateFinalPrice', () => {
         ])).toThrow();
     });
 
-    it.skip('should handle if discount does not exists', () => {
+    it.skip('should handle if a discount does not exists', () => {
         expect(() => calculateFinalPrice([
             productsStub[0],
             productsStub[1],

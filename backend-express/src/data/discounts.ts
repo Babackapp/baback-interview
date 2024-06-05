@@ -7,6 +7,7 @@ export type Discount = {
         totalAbove?: number;
         productsIds?: string[];
         minimalAmount?: number;
+        minimalQuantity?: number;
     };
 };
 
@@ -29,7 +30,7 @@ export const discountsStub: Discount[] = [
         type: 'fixed',
         amount: 20,
         rules: {
-            totalAbove: 50,
+            minimalAmount: 50,
         }
     },
     {
@@ -37,7 +38,7 @@ export const discountsStub: Discount[] = [
         code: '1_ACHETE_1_OFFERT_MICROPHONE',
         type: '1for1',
         rules: {
-            minimalAmount: 2,
+            minimalQuantity: 2,
             productsIds: ['1']
         }
     },
