@@ -94,7 +94,7 @@ describe('calculateFinalPrice', () => {
         expect(result).toBe(30);
     });
 
-    it.skip('should fail discount rules when quantity rule is not respected', () => {
+    it.skip('should no apply discount rules when quantity rule is not respected', () => {
         expect(() => calculateFinalPrice([
             {
                 ...productsStub[0],
