@@ -1,10 +1,9 @@
-import { log } from "console";
-import app from "./server";
+import { type Product } from "./data/products"
 
-const PORT = process.env.PORT || 3000;
+const calculateFinalPrice = (basket: Product[], discountCodes?: string[]): number => {
+    return 0
+}
 
-app.listen(PORT, () => {
-    console.log("Server running at PORT: ", PORT);
-}).on("error", (error) => {
-    throw new Error(error.message);
-});
+// console.log(calculateFinalPrice([]))
+
+export { calculateFinalPrice }

@@ -1,7 +1,7 @@
 ## Interview
 
 ### Setup
-```
+```bash
 cd frontend
 npm i
 npm run dev
@@ -9,6 +9,8 @@ npm run dev
 cd ../backend-express
 npm i
 npm run dev
+# ou 
+npm run test
 ```
 
 ### Objectif
