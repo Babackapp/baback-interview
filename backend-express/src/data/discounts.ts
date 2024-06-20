@@ -4,10 +4,12 @@ export type Discount = {
 	type: "percent" | "fixed" | "1for1";
 	amount?: number;
 	rules?: {
+		// Règles génerales
 		totalAbove?: number;
-		productsIds?: string[];
 		minimalAmount?: number;
 		minimalQuantity?: number;
+		// Que pour les 1for1
+		productsIds?: string[];
 	};
 };
 
