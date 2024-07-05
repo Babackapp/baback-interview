@@ -1,4 +1,4 @@
-import { productsStub } from './data/products';
+import { productsStub } from './products';
 import { calculateFinalPrice } from './index';
 import {describe, it, expect} from '@jest/globals';
 

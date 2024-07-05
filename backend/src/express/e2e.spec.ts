@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 import request from "supertest";
-import app from "../api/routes";
+import app from "./routes";
 
 describe("Health check", () => {
   it.skip("should return 200", async () => {
