@@ -1,7 +1,8 @@
+export type DiscountType = "percent" | "fixed" | "1for1";
 export type Discount = {
 	title: string;
 	code: string;
-	type: "percent" | "fixed" | "1for1";
+	type: DiscountType;
 	amount?: number;
 	rules?: {
 		// Règles génerales
