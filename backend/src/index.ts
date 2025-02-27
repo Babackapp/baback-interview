@@ -1,6 +1,8 @@
 import { Discount } from "./discounts";
 import {type Product, productsStub} from "./products"
 
+type DiscountGroup = Record<Discount["type"], Discount[]>
+
 const calculateFinalPrice = (basket: Product[], discountCodes: string[] = []): number => {
     // const discountByCodes = groupDiscountCodes(discountCodes);
     let total = calcTotal(basket);
@@ -16,8 +18,8 @@ function calcTotal(products: Product[]): number {
     return 0;
 }
 
-function groupDiscountCodes(codes: string[]): Record<Discount["type"], Discount[]> {
-    return {} as Record<Discount["type"], Discount[]>
+function groupDiscountCodes(codes: string[]): DiscountGroup {
+    return {} as DiscountGroup
 }
 
 function calcByPercentage(): number {
