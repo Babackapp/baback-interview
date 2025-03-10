@@ -76,12 +76,13 @@ describe('calculateFinalPrice', () => {
         expect(result).toBe(36);
     });
 
-    it.skip('should fail when a minimal amount rule is not respected', () => {
-        expect(() => calculateFinalPrice([
+    it.skip('should not apply discount when a minimal amount rule is not respected', () => {
+        const result = calculateFinalPrice([
             productsStub[1],
         ], [
             "20_EURO_OFF_ABOVE_50",
-        ])).toThrow();
+        ]);
+        expect(result).toBe(20);
     });
 
     it.skip('should respect discount rules on selected products only', () => {
@@ -94,17 +95,16 @@ describe('calculateFinalPrice', () => {
         expect(result).toBe(30);
     });
 
-    it.skip('should no apply discount rules when quantity rule is not respected', () => {
-        expect(() => calculateFinalPrice([
+    it.skip('should not apply discount when quantity rule is not respected', () => {
+        const result = calculateFinalPrice([
             {
                 ...productsStub[0],
                 quantity: 1,
             },
-            productsStub[1],
-            productsStub[2],
         ], [
             "1_ACHETE_1_OFFERT_MICROPHONE",
-        ])).toThrow();
+        ]);
+        expect(result).toBe(30);
     });
 
     it.skip('should handle if a discount does not exists', () => {
