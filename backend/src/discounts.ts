@@ -6,10 +6,11 @@ export type Discount = {
 	amount?: number;
 	rules?: {
 		// Règles génerales
-		totalAbove?: number;
-		minimalAmount?: number;
+		// Le panier total doit avoir un montant minimal de X€
+		minimalPriceBought?: number;
+		// Le panier doit contenir au minimum X articles au total
 		minimalQuantity?: number;
-		// Que pour les 1for1
+		// Que pour les 1for1, en conjonction avec minimalQuantity
 		productsIds?: string[];
 	};
 };
