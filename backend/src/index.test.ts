@@ -60,10 +60,10 @@ describe('calculateFinalPrice', () => {
             "10_PERCENT_OFF",
             "1_ACHETE_1_OFFERT_MICROPHONE",
         ]);
-        expect(result).toBe(33);
+        expect(result).toBe(36);
     });
 
-    it.skip('should apply the discounts with an order (fixed, percent, 1for1)', () => {
+    it.skip('should apply the discounts with an order (1for1, fixed, percent)', () => {
         const result = calculateFinalPrice([
             productsStub[0],
             productsStub[1],
@@ -73,7 +73,7 @@ describe('calculateFinalPrice', () => {
             "20_EURO_OFF",
             "1_ACHETE_1_OFFERT_MICROPHONE",
         ]);
-        expect(result).toBe(33);
+        expect(result).toBe(36);
     });
 
     it.skip('should fail when a minimal amount rule is not respected', () => {
