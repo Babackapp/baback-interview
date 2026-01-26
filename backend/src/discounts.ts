@@ -34,7 +34,7 @@ export const discountsStub: Discount[] = [
 		type: "fixed",
 		amount: 20,
 		rules: {
-			minimalAmount: 50,
+			minimalPriceBought: 50,
 		},
 	},
 	{
